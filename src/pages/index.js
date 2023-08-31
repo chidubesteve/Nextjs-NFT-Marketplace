@@ -1,11 +1,9 @@
-import { Inter } from "next/font/google";
 import { useMoralis } from "react-moralis";
 import NFTBox from "../../components/NFTBox.js";
 import networkMapping from "../../constants/networkMapping.json";
 import {useQuery} from "@apollo/client"
 import GET_ACTIVE_ITEMS from "../../constants/subgraphQueries.js";
 
-const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   const { chainId, isWeb3Enabled } = useMoralis();
   const chainString = chainId ? parseInt(chainId).toString() : null;
@@ -15,7 +13,7 @@ export default function Home() {
   return (
     <>
       <main
-        className={`container mx-auto flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+        className="container mx-auto flex min-h-screen flex-col items-center justify-between p-24"
       >
         <h1 className="py-4 px-4 font-bold text-2xl">Recently Listed</h1>
         <div className="flex flex-wrap">

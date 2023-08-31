@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import { useEffect, useState } from "react"; // Import useEffect and useState
 import { Form, useNotification, Button } from "web3uikit";
 import { useMoralis, useWeb3Contract } from "react-moralis";
@@ -9,7 +8,6 @@ import nftMarketplaceAbi from "../../constants/NftMarketplace.json";
 import networkMapping from "../../constants/networkMapping.json";
 import styles from "../styles/Home.module.css";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const { chainId, account, isWeb3Enabled } = useMoralis();
@@ -116,7 +114,7 @@ export default function Home() {
           content="Sell your NFT's and take the proceeds"
         />
       </Head>
-      <main className={` ${inter.className}`}>
+      <main>
         <div className={styles.container}>
           <Form
             onSubmit={approveAndList}
