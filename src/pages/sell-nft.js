@@ -6,8 +6,7 @@ import nftAbi from "../../constants/BasicNft.json";
 import Head from "next/head";
 import nftMarketplaceAbi from "../../constants/NftMarketplace.json";
 import networkMapping from "../../constants/networkMapping.json";
-
-
+import styles from "./_app";
 
 export default function Home() {
   const { chainId, account, isWeb3Enabled } = useMoralis();
