@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import '../styles/Home.Module.css'; // Import your global CSS file here
 import Header from "../../components/Header";
 import { MoralisProvider } from "react-moralis";
 import Head from "next/head";

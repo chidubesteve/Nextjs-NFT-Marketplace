@@ -6,7 +6,7 @@ import nftAbi from "../../constants/BasicNft.json";
 import Head from "next/head";
 import nftMarketplaceAbi from "../../constants/NftMarketplace.json";
 import networkMapping from "../../constants/networkMapping.json";
-import styles from "../styles/Home.Module.css";
+
 
 
 export default function Home() {
